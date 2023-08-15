@@ -30,3 +30,23 @@
         [7] Hello World
 
 */
+#include<stdio.h>
+
+int main() {
+    
+    int input , i = 1 ;
+    printf( "Test case:\n" ) ;
+    scanf( "%d", &input ) ;
+
+    while ( i <= input ) { // ให้ i ค่าเท่ากับ 1 แล้วเปรียบเทียบไปเรื่อยๆ
+        if ( input % 2 == 0 ) {// เปรียบเทียบแล้วเป็นเลข คู่
+            printf( "(%d) Hello World\n", i ) ;
+        }
+        else if ( input % 2 != 0 ) { // เปรียบเทียบเป็นเลขคี่
+            printf( "[%d] Hello World\n", i ) ;
+        }
+        i++ ;
+    }
+    
+    return 0;
+}
